@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Post Script — Meteorz Script</title>
+<link rel="stylesheet" href="styles.css"/>
+<script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container" style="max-width:920px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <a href="index.html" class="btn">← Home</a>
+      <div id="topAuth" class="profile-menu"></div>
+    </div>
+
+    <h2>Post a new script</h2>
+    <div class="form">
+      <label class="label">Title</label>
+      <input id="postTitle" class="input" placeholder="Script title (required)" />
+
+      <label class="label">Game name</label>
+      <input id="postGame" class="input" placeholder="Game name (optional)" />
+
+      <label class="label">Game icon URL</label>
+      <input id="postIcon" class="input" placeholder="Link to an icon image (optional)" />
+
+      <label class="label">Is this Keyless?</label>
+      <select id="postKeyless" class="input">
+        <option value="no">No</option>
+        <option value="yes">Yes (Keyless)</option>
+      </select>
+
+      <label class="label">Script code (paste)</label>
+      <textarea id="postCode" class="input" style="min-height:220px;font-family:monospace"></textarea>
+
+      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+        <button id="postBtn" class="btn primary">Post script</button>
+      </div>
+
+      <div id="postMsg" class="small" style="margin-top:10px;color:var(--muted)"></div>
+    </div>
+
+    <div style="margin-top:20px" id="previewPanel"></div>
+  </div>
+</body>
+</html>
