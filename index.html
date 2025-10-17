@@ -8,42 +8,33 @@
 <script type="module" src="app.js" defer></script>
 </head>
 <body>
-  <div class="top-left-post">
-    <a href="post.html" class="btn primary">＋ Post Script</a>
-  </div>
-
-  <div class="container">
+  <button class="fab" onclick="location.href='post.html'">＋ Post</button>
+  <div class="container fade-in">
     <div class="topbar">
       <div class="brand">
         <div class="brand-logo">MS</div>
         <div>
           <div class="brand-title">Meteorz Script</div>
-          <div class="small">Public scripts — black &amp; white</div>
+          <div class="small">Public scripts — black & white</div>
         </div>
       </div>
 
       <div class="controls">
         <input id="searchInput" class="search" placeholder="Search scripts, titles, games..." />
-        <div id="authButtons" class="profile-menu">
-          <!-- Filled by app.js -->
-        </div>
+        <div id="authButtons" class="profile-menu"></div>
       </div>
     </div>
 
-    <div class="main-grid">
-      <div class="header-row">
-        <div class="small">Recent scripts</div>
-        <div class="toolbar">
-          <button id="refreshBtn" class="btn">Refresh</button>
-        </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <div class="small">Recent scripts</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <button id="refreshBtn" class="btn">Refresh</button>
       </div>
-
-      <div id="cardGrid" class="card-grid"></div>
-
-      <div id="noResults" class="small" style="display:none">No scripts found.</div>
-
-      <div class="footer">Made with ⚡ Meteorz — keep scripts clean. Log in to post.</div>
     </div>
+
+    <div id="cardGrid" class="card-grid"></div>
+    <div id="noResults" class="small" style="display:none">No scripts found.</div>
+    <div class="footer">Made with ⚡ Meteorz — keep scripts clean. Log in to post.</div>
   </div>
 </body>
 </html>
