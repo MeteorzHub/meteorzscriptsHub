@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Profile — Meteorz Script</title>
+<link rel="stylesheet" href="styles.css"/>
+<script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container" style="max-width:900px">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+      <a href="index.html" class="btn">← Home</a>
+      <div id="profileAuth" class="profile-menu"></div>
+    </div>
+
+    <div style="display:flex;gap:16px;align-items:center;margin-bottom:12px">
+      <div class="icon-circle" id="pfIcon">U</div>
+      <div>
+        <div id="pfName" style="font-weight:700">—</div>
+        <div class="small" id="pfEmail">—</div>
+      </div>
+    </div>
+
+    <h3>Your published scripts</h3>
+    <div id="myScripts" class="card-grid"></div>
+
+    <h3 style="margin-top:18px">Account actions</h3>
+    <div class="form" style="max-width:560px">
+      <label class="label">Change password</label>
+      <input id="changePassOld" class="input" type="password" placeholder="Current password" />
+      <input id="changePassNew" class="input" type="password" placeholder="New password" />
+      <button id="changePassBtn" class="btn primary">Change password</button>
+
+      <div style="margin-top:8px">
+        <button id="logoutBtn" class="btn">Log out</button>
+      </div>
+
+      <div id="profileMsg" class="small" style="margin-top:10px;color:var(--muted)"></div>
+    </div>
+  </div>
+</body>
+</html>
