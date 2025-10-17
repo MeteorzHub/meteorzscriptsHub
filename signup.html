@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sign up — Meteorz Script</title>
+<link rel="stylesheet" href="styles.css"/>
+<script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <div class="container" style="max-width:560px">
+    <a href="index.html" class="btn" style="margin-bottom:12px">← Back</a>
+    <h2 style="margin-top:6px">Create account</h2>
+
+    <div class="form">
+      <label class="label">Username</label>
+      <input id="signupUsername" class="input" />
+
+      <label class="label">Email</label>
+      <input id="signupEmail" class="input" type="email" />
+
+      <label class="label">Password</label>
+      <input id="signupPassword" class="input" type="password" />
+
+      <button id="signupBtn" class="btn primary">Create account</button>
+      <button id="signupGoogleBtn" class="btn" style="margin-left:8px">Sign up with Google</button>
+
+      <div id="signupMsg" class="small" style="margin-top:10px;color:var(--muted)"></div>
+    </div>
+  </div>
+</body>
+</html>
