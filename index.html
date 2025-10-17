@@ -1,40 +1,32 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Meteorz Script — Home</title>
-<link rel="stylesheet" href="styles.css" />
-<script type="module" src="app.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meteorz Script — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="app.js" defer></script>
 </head>
 <body>
-  <button class="fab" onclick="location.href='post.html'">＋ Post</button>
-  <div class="container fade-in">
+  <button class="fab" onclick="location.href='post.html'">＋ Post Script</button>
+
+  <div class="container">
     <div class="topbar">
       <div class="brand">
         <div class="brand-logo">MS</div>
-        <div>
-          <div class="brand-title">Meteorz Script</div>
-          <div class="small">Public scripts — black & white</div>
-        </div>
+        <div class="brand-title">Meteorz Script</div>
       </div>
-
       <div class="controls">
-        <input id="searchInput" class="search" placeholder="Search scripts, titles, games..." />
-        <div id="authButtons" class="profile-menu"></div>
+        <input id="searchInput" class="search" placeholder="Search scripts..." />
+        <div id="authButtons"></div>
       </div>
     </div>
 
-    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
-      <div class="small">Recent scripts</div>
-      <div style="display:flex;gap:8px;align-items:center">
-        <button id="refreshBtn" class="btn">Refresh</button>
-      </div>
-    </div>
-
+    <h2>🚀 Recent Scripts</h2>
     <div id="cardGrid" class="card-grid"></div>
-    <div id="noResults" class="small" style="display:none">No scripts found.</div>
-    <div class="footer">Made with ⚡ Meteorz — keep scripts clean. Log in to post.</div>
+    <div id="noResults" style="display:none;color:#888;margin-top:20px;">No scripts found.</div>
+
+    <div class="footer">Made with ❤️ by Meteorz — Black & White Edition</div>
   </div>
 </body>
 </html>
